@@ -1,0 +1,22 @@
+name: Sync to Hugging Face Hub
+on:
+  push:
+    branches: [main]
+  # allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  sync-to-hub:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          lfs: true
+      - name: Push to hub
+        uses: nateraw/huggingface-sync-action@v0.0.5
+        with:
+          github_repo_id: 'orakzai-io/Personal-Portfolio'
+          huggingface_repo_id: 'orakzai-io/Personal-Portfolio'
+          hf_token: ${{ secrets.HF_TOKEN }}
+          repo_type: 'space'
