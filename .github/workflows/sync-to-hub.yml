@@ -13,9 +13,7 @@ jobs:
           fetch-depth: 0
           lfs: true
       - name: Push to hub
-        uses: nateraw/huggingface-sync-action@v0.0.5
-        with:
-          github_repo_id: 'orakzai-io/Personal-Portfolio'
-          huggingface_repo_id: 'orakzai-io/Personal-Portfolio'
-          hf_token: ${{ secrets.HF_TOKEN }}
-          repo_type: 'space'
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: |
+          git push --force https://orakzai-io:$HF_TOKEN@huggingface.co/spaces/orakzai-io/Personal-Portfolio main
