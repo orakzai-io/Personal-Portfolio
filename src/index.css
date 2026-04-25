@@ -1,0 +1,7 @@
+@import './styles/variables.css';
+@import './styles/base.css';
+
+/* 
+  Global entry point for styles. 
+  Component-specific styles are imported in their respective components.
+*/

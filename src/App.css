@@ -1,0 +1,11 @@
+.portfolio-app {
+  min-height: 100vh;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+@media (max-width: 768px) {
+  .portfolio-app {
+    padding-bottom: 20px;
+  }
+}

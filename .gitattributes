@@ -1,0 +1,4 @@
+# Hide CSS from GitHub Language Statistics
+*.css linguist-vendored
+*.html linguist-vendored
+*.svg linguist-vendored
