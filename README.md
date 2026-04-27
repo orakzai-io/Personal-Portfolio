@@ -3,7 +3,7 @@
 A high-performance, minimalist portfolio showcasing my expertise in **Backend Architecture, Intelligent Automation, and GenAI Systems.**
 
 ## 🚀 Live Demo
-[View Live Site](https://orakzai-io-personal-portfolio.hf.space/)
+[View Live Site](https://orakzai-io-portfolio.hf.space)
 
 ## 🛠️ Tech Stack
 - **Frontend**: React 19, TypeScript, Vite
