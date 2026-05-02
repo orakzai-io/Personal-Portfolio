@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import resume from '../assets/Shahsawar.Dev.pdf';
+import resume from '../assets/Shahsawar.dev.pdf';
 import picture from '../assets/Shahsawar Professional image.png';
 import './Hero.css';
 
